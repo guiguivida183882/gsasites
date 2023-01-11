@@ -1,0 +1,174 @@
+
+  /* INICIO DO MENU */
+   header{
+      background-color: rgb(255, 255, 255);
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      margin: 0 auto;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+   .menuimg{
+    display: inline;
+      justify-content: center;
+  }
+
+  .menucli{
+    justify-content: right;
+} 
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+header{
+  font-family: 'Open Sans', sans-serif;
+
+}
+#Menuh ul{
+  list-style: none;
+  padding: 0;
+}
+
+#Menuh ul li{
+  display: inline;
+}
+
+#Menuh ul li a{
+  color: rgb(8, 8, 8);
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  transition: background .6s;
+}
+#Menuh  ul li a:hover{
+  background-color: rgb(167, 173, 173);
+
+}
+/* FIM DO MENU */
+
+
+
+
+/* Começo slides  */
+
+
+.slider{
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.slides{
+  width: 400%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 25%;
+  position: relative;
+}
+
+.slide img{
+  width: 100%;
+}
+
+.manualNavigation{
+  position: absolute;
+  width: 100%;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background-color: rgb(61, 171, 223);
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~.first{
+  margin-left: -50%;
+
+}
+
+#radio3:checked ~.first{
+  margin-left: -100%;
+  
+}
+
+#radio4:checked ~.first{
+  margin-left: -150%;
+  
+}
+
+.navegationAuto div{
+  border: 2px solid #0842ff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  
+
+}
+
+.navegationAuto{
+
+  position: absolute;
+  width: 800px;
+  margin-top: 360px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navegationAuto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navegationAuto .autoBtn1{
+  background-color: #fff;
+}
+#radio2:checked ~ .navegationAuto .autoBtn2{
+  background-color: #fff;
+}
+#radio3:checked ~ .navegationAuto .autoBtn3{
+  background-color: #fff;
+}
+#radio4:checked ~ .navegationAuto .autoBtn4{
+  background-color: #fff;
+}
+
+/* Fim slides */
+
+body{
+  background-color: #e9e2e2;
+  height: 100vh;
+}
+/* teste  e curiosidades */
+
+
+
