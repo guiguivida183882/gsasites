@@ -1,174 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
 
-  /* INICIO DO MENU */
-   header{
-      background-color: rgb(255, 255, 255);
-      display: flex;
-      align-items: center;
-      justify-content: space-around;
-      margin: 0 auto;
-      padding: 0;
-      box-sizing: border-box;
-  }
-
-   .menuimg{
-    display: inline;
-      justify-content: center;
-  }
-
-  .menucli{
-    justify-content: right;
-} 
-
-
-  @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+section{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #121212;
+    overflow: hidden;
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #e51e2a;
+    clip-path: circle(50% at bottom right);
+}
 header{
-  font-family: 'Open Sans', sans-serif;
-
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-#Menuh ul{
-  list-style: none;
-  padding: 0;
+header .logo{
+    position: relative;
+    max-width: 150px;
 }
-
-#Menuh ul li{
-  display: inline;
+header .navegation ul{
+    position: relative;
+    display: flex;
 }
-
-#Menuh ul li a{
-  color: rgb(8, 8, 8);
-  text-decoration: none;
-  padding: 20px;
-  display: inline-block;
-  transition: background .6s;
+header .navegation  li{
+    list-style: none;
 }
-#Menuh  ul li a:hover{
-  background-color: rgb(167, 173, 173);
-
+header .navegation li a{
+    display: inline-block;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    font-size: 19px;
+    margin-left: 100px;
 }
-/* FIM DO MENU */
-
-
-
-
-/* Começo slides  */
-
-
-.slider{
-  margin: 0 auto;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
+.content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-
-.slides{
-  width: 400%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
+.content .text{
+    position: relative;
+    max-width: 600px;
+    margin-right: 20px;
 }
-
-.slides input{
-  display: none;
+.content .text h2{
+    color: #fff;
+    font-size: 3em;
+    margin-bottom: 10px;
+    line-height: 2.5em;
+    font-weight: 700;
 }
-
-.slide{
-  width: 25%;
-  position: relative;
+.content .text h2 span{
+    font-size: 3.5em;
+    color: #e51e2a;
 }
-
-.slide img{
-  width: 100%;
+.content .text p{
+    color: #fff;
 }
-
-.manualNavigation{
-  position: absolute;
-  width: 100%;
-  margin-top: -40px;
-  display: flex;
-  justify-content: center;
+.content .text a{
+    display: inline-block;
+    margin-top: 50px;
+    padding: 10px 25px;
+    background: #e51e2a;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 40px;
+    transition: 0.3s ease-in-out;
 }
-
-.manual-btn{
-
-  border: 2px solid #fff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
+.content .text a:hover{
+    transform: translateY(-10px);
 }
-
-.manual-btn:not(:last-child){
-  margin-right: 40px;
+.icons{
+    position: absolute;
+    bottom: 40px;
+    left: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
-.manual-btn:hover{
-  background-color: rgb(61, 171, 223);
+.icons li{
+    list-style: none;
 }
-
-#radio1:checked ~ .first{
-  margin-left: 0;
+.icons li a{
+    display: inline-block;
+    margin-left: 45px;
+    background: #222;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition:  0.3s ease-in-out;
 }
-
-#radio2:checked ~.first{
-  margin-left: -50%;
-
+.icons li a:hover{
+    background: #e51e2a;
+    transform: translateY(-10px);
 }
-
-#radio3:checked ~.first{
-  margin-left: -100%;
-  
+.icons li a img{
+    filter: invert(1);
+    transform: scale(0.5);
 }
-
-#radio4:checked ~.first{
-  margin-left: -150%;
-  
+.boxImg{
+    position: absolute;
+    right: 0;
+    bottom: -40px;
 }
-
-.navegationAuto div{
-  border: 2px solid #0842ff;
-  padding: 5px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: 1s;
-  
-
+.boxImg img{
+    width: 200px;
 }
-
-.navegationAuto{
-
-  position: absolute;
-  width: 800px;
-  margin-top: 360px;
-  display: flex;
-  justify-content: center;
-
+.boxImg .img1{
+    transform: rotate(-15deg)
 }
-
-.navegationAuto div:not(:last-child){
-  margin-right: 40px;
+.boxImg .img2{
+    transform: rotate(5deg)
 }
-
-#radio1:checked ~ .navegationAuto .autoBtn1{
-  background-color: #fff;
+.boxImg .img3{
+    transform: rotate(15deg)
 }
-#radio2:checked ~ .navegationAuto .autoBtn2{
-  background-color: #fff;
+.boxImg .img4{
+    transform: rotate(-15deg)
 }
-#radio3:checked ~ .navegationAuto .autoBtn3{
-  background-color: #fff;
-}
-#radio4:checked ~ .navegationAuto .autoBtn4{
-  background-color: #fff;
-}
-
-/* Fim slides */
-
-body{
-  background-color: #e9e2e2;
-  height: 100vh;
-}
-/* teste  e curiosidades */
-
-
-

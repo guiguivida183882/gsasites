@@ -1,64 +1,34 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
     <link rel="stylesheet" href="css/estilo.css">
+    <title>Document</title>
 </head>
 <body>
-    <!-- Inclusão do header -->
-    <?php include('header.html')?>
-    <!-- Fim da inclusão do header -->
-<!-- Começo dos slides -->
-    <div class="slider">
-        <div class="slides">
-            <!-- Radio buttons -->
-            <input type="radio" name="radio-btn" id="radio1">
-            <input type="radio" name="radio-btn" id="radio2">
-            <input type="radio" name="radio-btn" id="radio3">
-            <input type="radio" name="radio-btn" id="radio4">
-             <!-- Fim Radio buttons -->
-
-             <!-- Slide imagem -->
-             <div class="slide first">
-                <img src="imagens/Design sem nome (1).png" alt="imagem 1">
-             </div>
-             <div class="slide">
-                <img src="imagens/Design sem nome (2).png" alt="imagem 2">
-             </div>
-             <div class="slide ">
-                <img src="imagens/Design sem nome (3).png" alt="imagem 3">
-             </div>
-             <div class="slide ">
-                <img src="imagens/Design sem nome (4).png" alt="imagem 4">
-             </div>
-             <!--Fim Slide imagem -->
-
-             <!-- Navigation auto -->
-            <div class="navegationAuto">
-                <div class="autoBtn1"></div>
-                <div class="autoBtn2"></div>
-                <div class="autoBtn3"></div>
-                <div class="autoBtn4"></div>
-
+    <section>
+        <div class="circle"></div>
+        <?php include('header.html')?>
+        <div class="content">
+            <div class="text">
+                <h2>THAT'S WHAT <br><span>I LIKE</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores autem eaque voluptas accusamus, illum, quisquam distinctio adipisci iusto earum corrupti soluta tenetur voluptatibus aperiam saepe vitae architecto eligendi repellendus delectus?</p>
+                <a href="#">VIEW ALL PRODUCTS</a>
             </div>
         </div>
-
-    </div>
-    <div class="manualNavigation">
-        <label for="radio1" class="manual-btn"></label>
-        <label for="radio2" class="manual-btn"></label>
-        <label for="radio3" class="manual-btn"></label>
-        <label for="radio4" class="manual-btn"></label>
-    </div>
-    <!-- Inclusão do js nos slides -->
-        <script src="js/script.js"></script>
-    <!-- Fim da inclusão do js  -->
-<!-- Fim dos slides -->
-
-
-
+        <ul class="icons">
+            <li><a href="#"><img src="imagens/facebook.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/twitter.png" alt=""></a></li>
+            <li><a href="#"><img src="imagens/instagram.png" alt=""></a></li>
+        </ul>
+        <div class="boxImg">
+            <img src="imagens/cocacola1.png" alt="" class="img1">
+            <img src="imagens/cocacola2.png" alt="" class="img2">
+            <img src="imagens/cocacola3.png" alt="" class="img3">
+            <img src="imagens/cocacola4.png" alt="" class="img4">
+        </div>
+    </section>
 </body>
 </html>
